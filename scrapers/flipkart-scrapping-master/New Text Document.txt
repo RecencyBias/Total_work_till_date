@@ -1,0 +1,35 @@
+import scrapy
+import urllib2
+import urllib
+from scrapy.spiders import BaseSpider
+from scrapy.selector import Selector
+from scrapy.http.request import Request
+from scrapy.http.response import Response
+from scrapy import signals
+from scrapy.xlib.pydispatch import dispatcher
+import re
+
+#search_q = input("Enter what you want to search:")
+#print search_q
+#search_q= search_q.replace(" ", "+")
+#search_url="http://www.flipkart.com/search?q="+search_q
+#start_urls = search_url
+#start_urls=['http://www.flipkart.com/rosra-c1-analog-watch-couple-men-women-boys-girls/p/itmef43d6hdnmv2q']
+#hxs = Selector(response)
+#hxs.select(".//a[@class='fk-display-block']/text()").extract()
+class Flipkart(scrapy.Spider):
+    name = "flipkart"		
+    allowed_domains = ['flipkart.com']
+    start_urls = ['http://www.flipkart.com/rosra-c1-analog-watch-couple-men-women-boys-girls/p/itmef43d6hdnmv2q']
+    #def __init__(self):
+	#super(Flipkart, self)
+    #def spider_closed(self, spider):
+	#pass
+    def parse(self, response):
+        #hxs = Selector(response)
+        hxs=Selector(response)
+        links = hxs.xpath(".//span[@class='review-text']/").extract()
+        print links
+    
+    
+#Flipkart()

@@ -1,0 +1,207 @@
+#Numbers of features x hours after the tweet was posted 
+import matplotlib.pyplot as plt
+hours = [1,2,3,4,5,6]
+SainaNehwal_replies = [11,1,3,2,1,0] 
+SainaNehwal_retweets = [13,2,1,1,1,0]
+SainaNehwal_likes = [159,20,33,28,24,22]
+plt.bar(SainaNehwal_likes,SainaNehwal_retweets, align='center',color='green',label="likesvsretweets")
+import numpy
+#a = numpy.array([[1,2],[3,4],[5,6]])
+numpy.savetxt("dtaa.csv",zip(SainaNehwal_replies,SainaNehwal_likes,SainaNehwal_retweets), delimiter=',', header="Replies,Likes,Retweets", comments="")
+
+#plt.xticks(x, labels)
+'''plt.xlabel('Number of hours ago tweet was posted')
+plt.ylabel('No of retweets')
+plt.show()
+#plt.title('Histogram depicting the relationship between popularity of media features and time')
+#plt.bar(x,intretweets2,color='yellow',label = "No of retweets")
+#plt.bar(x,intreplies1,color='blue',label = "No of replies")
+'''
+plt.show()
+BSF_replies = [2,1,0,0,0,0]
+BSF_retweets = [24,2,2,3,3,3]
+BSF_likes = [57,8,10,12,10,11]
+plt.bar(BSF_likes,BSF_retweets, align='center',color='green',label="No of retweets")
+numpy.savetxt("dtaa1.csv",zip(BSF_replies,BSF_likes,BSF_retweets), delimiter=',', header="Replies,Likes,Retweets", comments="")
+#plt.xticks(x, labels)
+plt.xlabel('BSF likes')
+plt.ylabel('No of retweets')
+plt.show()
+'''plt.bar(hours,BSF_likes, align='center',color='green',label="No of likes")
+
+#plt.xticks(x, labels)
+plt.xlabel('BSF Number of hours ago tweet was posted')
+plt.ylabel('No of likes')
+plt.show()
+plt.bar(hours,BSF_replies, align='center',color='green',label="No of replies")
+
+#plt.xticks(x, labels)
+plt.xlabel('BSF Number of hours ago tweet was posted')
+plt.ylabel('No of replies')
+plt.show()
+'''
+IITMadras_replies = [0,0,0,0,0,0]
+IITMadras_retweets = [2,1,0,2,0,1]
+IITMadras_likes = [20,1,0,7,1,6]
+numpy.savetxt("dtaa2.csv",zip(IITMadras_replies,IITMadras_likes,IITMadras_retweets), delimiter=',', header="Replies,Likes,Retweets", comments="")
+plt.bar(IITMadras_likes,IITMadras_retweets, align='center',color='green',label="No of retweets")
+
+#plt.xticks(x, labels)
+plt.xlabel('IITM likes')
+plt.ylabel('No of retweets')
+plt.show()
+'''ITMadras_replies = [0,0,0,0,0,0]
+IITMadras_retweets = [2,1,0,2,0,1]
+IITMadras_likes = [20,1,0,7,1,6]
+plt.bar(hours,IITMadras_replies, align='center',color='green',label="No of replies")
+
+#plt.xticks(x, labels)
+plt.xlabel('IITM Number of hours ago tweet was posted')
+plt.ylabel('No of replies')
+plt.show()
+ITMadras_replies = [0,0,0,0,0,0]
+IITMadras_retweets = [2,1,0,2,0,1]
+IITMadras_likes = [20,1,0,7,1,6]
+plt.bar(hours,IITMadras_likes, align='center',color='green',label="No of likes")
+
+#plt.xticks(x, labels)
+plt.xlabel('IITM Number of hours ago tweet was posted')
+plt.ylabel('No of likes')
+plt.show()
+
+Paytm_replies = [3,0,0,0,0,0]
+Paytm_retweets = [3,0,0,0,0,0]
+Paytm_likes = [13,1,0,0,1,4]
+plt.bar(hours,Paytm_retweets, align='center',color='green',label="No of retweets")
+
+#plt.xticks(x, labels)
+plt.xlabel('Paytm Number of hours ago tweet was posted')
+plt.ylabel('No of retweets')
+plt.show()
+plt.bar(hours,Paytm_likes, align='center',color='green',label="No of likes")
+
+#plt.xticks(x, labels)
+plt.xlabel('Paytm Number of hours ago tweet was posted')
+plt.ylabel('No of likes')
+plt.show()
+plt.bar(hours,Paytm_replies, align='center',color='green',label="No of replies")
+
+#plt.xticks(x, labels)
+plt.xlabel('Paytm Number of hours ago tweet was posted')
+plt.ylabel('No of replies')
+plt.show()'''
+OnePlus_replies = [10,0,2,1,0,4]
+OnePlus_retweets = [16,2,2,2,1,0]
+OnePlus_likes = [204,37,32,35,12,19]
+numpy.savetxt("dtaa3.csv",zip(OnePlus_replies,OnePlus_likes,OnePlus_retweets), delimiter=',', header="Replies,Likes,Retweets", comments="")
+plt.bar(OnePlus_likes,OnePlus_retweets, align='center',color='green',label="No of retweets")
+
+#plt.xticks(x, labels)
+plt.xlabel('Oneplus likes')
+plt.ylabel('No of retweets')
+plt.show()
+'''plt.bar(hours,OnePlus_replies, align='center',color='green',label="No of replies")
+
+#plt.xticks(x, labels)
+plt.xlabel('Oneplus Number of hours ago tweet was posted')
+plt.ylabel('No of replies')
+plt.show()
+plt.bar(hours,OnePlus_likes, align='center',color='green',label="No of likes")
+
+#plt.xticks(x, labels)
+plt.xlabel('Oneplus Number of hours ago tweet was posted')
+plt.ylabel('No of likes')
+plt.show()
+'''
+TEDTalks_replies = [12,0,5,0,0,0]
+TEDTalks_retweets = [58,5,9,9,6,4]
+TEDTalks_likes = [115,8,23,15,9,9]
+plt.bar(TEDTalks_likes,TEDTalks_retweets, align='center',color='green',label="No of retweets")
+numpy.savetxt("dtaa3.csv",zip(TEDTalks_replies,TEDTalks_likes,TEDTalks_retweets), delimiter=',', header="Replies,Likes,Retweets", comments="")
+#plt.xticks(x, labels)
+plt.xlabel('Ted Number of likes')
+plt.ylabel('No of retweets')
+plt.show()
+'''plt.bar(hours,TEDTalks_replies, align='center',color='green',label="No of replies")
+
+#plt.xticks(x, labels)
+plt.xlabel('Ted Number of hours ago tweet was posted')
+plt.ylabel('No of replies')
+plt.show()
+plt.bar(hours,TEDTalks_likes, align='center',color='green',label="No of likes")
+
+#plt.xticks(x, labels)
+plt.xlabel('Ted Number of hours ago tweet was posted')
+plt.ylabel('No of likes')
+plt.show()
+SuhelSeth_replies = [2,0,0,0,1,0]
+SuhelSeth_retweets = [6,0,0,0,0,0]
+SuhelSeth_likes = [27,1,1,2,1,1]
+plt.bar(hours,SuhelSeth_retweets, align='center',color='green',label="No of retweets")
+
+#plt.xticks(x, labels)
+plt.xlabel('SS Number of hours ago tweet was posted')
+plt.ylabel('No of retweets')
+plt.show()
+plt.bar(hours,SuhelSeth_likes, align='center',color='green',label="No of likes")
+
+#plt.xticks(x, labels)
+plt.xlabel('SS Number of hours ago tweet was posted')
+plt.ylabel('No of likes')
+plt.show()
+plt.bar(hours,SuhelSeth_replies, align='center',color='green',label="No of replies")
+
+#plt.xticks(x, labels)
+plt.xlabel('SS Number of hours ago tweet was posted')
+plt.ylabel('No of replies')
+plt.show()'''
+KiranBedi_replies = [45,6,8,4,1,9]
+KiranBedi_retweets = [55,13,14,7,5,6]
+KiranBedi_likes = [336,69,88,60,57,46]
+plt.bar(KiranBedi_likes,KiranBedi_retweets, align='center',color='green',label="No of retweets")
+
+#plt.xticks(x, labels)
+plt.xlabel('KB likes')
+plt.ylabel('No of retweets')
+plt.show()
+'''plt.bar(hours,KiranBedi_replies, align='center',color='green',label="No of replies")
+
+#plt.xticks(x, labels)
+plt.xlabel('KB Number of hours ago tweet was posted')
+plt.ylabel('No of replies')
+plt.show()
+plt.bar(hours,KiranBedi_likes, align='center',color='green',label="No of likes")
+
+#plt.xticks(x, labels)
+plt.xlabel('KB Number of hours ago tweet was posted')
+plt.ylabel('No of likes')
+plt.show()
+'''
+ROFLGandhi_replies = [34,2,5,7,3,0] 
+ROFLGandhi_retweets = [244,37,57,80,43,56]
+ROFLGandhi_likes = [451,75,126,135,96,111]
+plt.bar(ROFLGandhi_likes,ROFLGandhi_retweets, align='center',color='green',label="No of retweets")
+
+#plt.xticks(x, labels)
+plt.xlabel('RG Number of likes')
+plt.ylabel('No of retweets')
+plt.show()
+'''plt.bar(hours,ROFLGandhi_replies, align='center',color='green',label="No of replies")
+
+#plt.xticks(x, labels)
+plt.xlabel('RG Number of hours ago tweet was posted')
+plt.ylabel('No of replies')
+plt.show()
+plt.bar(hours,ROFLGandhi_likes, align='center',color='green',label="No of likes")
+
+#plt.xticks(x, labels)
+plt.xlabel('RG Number of hours ago tweet was posted')
+plt.ylabel('No of likes')
+plt.show()
+	
+	
+	
+'''	
+	
+
+

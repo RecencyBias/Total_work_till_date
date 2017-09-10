@@ -1,0 +1,30 @@
+import matplotlib.pyplot as plt
+import numpy as np
+time = [8,10,7,7,5,9,0,73,6,6,7,5,10,7,8,5,9,2,9,6,10]
+
+replies = [0,16,9,0,3,6,306,199,36,2,107,72,1,63,27,27,8,56,26,30,12]
+
+retweets = [0,43,2,0,75,306,391,158,95,18,125,207,83,1100,64,175,252,176,138,592,400]
+print len(time)
+print len(replies)
+print len(retweets)
+likes = [0,432,420,0,302,695,1200,1700,819,116,1100,1700,94,2000,798,599,765,780,577,1200,300]
+print len(likes)
+ranks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
+plt.bar(ranks,time, align='center',color='green',label="No of likes")
+plt.xlabel('The number at which it appeared on timeline')
+plt.ylabel('Green = Hours, Red = Replies, cyan = likes ,yellow = retweets')
+plt.show()
+#plt.xticks(x, labels)
+plt.bar(ranks,replies,align = 'center',color='red')
+plt.xlabel('The number at which it appeared on timeline')
+plt.ylabel('Green = Hours, Red = Replies, cyan = likes ,yellow = retweets')
+plt.show()
+plt.bar(ranks,retweets,align = 'center',color = 'yellow')
+plt.xlabel('The number at which it appeared on timeline')
+plt.ylabel('Green = Hours, Red = Replies, cyan = likes ,yellow = retweets')
+plt.show()
+plt.bar(ranks,likes,align ='center',color = 'cyan')
+plt.xlabel('The number at which it appeared on timeline')
+plt.ylabel('Green = Hours, Red = Replies, cyan = likes ,yellow = retweets')
+plt.show()
